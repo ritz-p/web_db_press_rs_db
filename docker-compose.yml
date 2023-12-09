@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  rust:
+    container_name: mini_db
+    build: .
+    tty: true
+    volumes:
+      - .:/workspace
+    ports:
+      - 5432:5432
