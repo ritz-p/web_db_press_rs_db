@@ -3,7 +3,7 @@ use std::io::{self, Write, SeekFrom, Seek, Read};
 use std::path::Path;
 
 use zerocopy::{FromBytes, AsBytes};
-const PAGE_SIZE:usize = 4096;
+pub const PAGE_SIZE:usize = 4096;
 
 #[derive(Debug,Clone,Copy,Eq,PartialEq,Hash,FromBytes,AsBytes)]
 #[repr(C)]
