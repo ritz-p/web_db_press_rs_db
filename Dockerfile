@@ -5,4 +5,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rustup component add rls rust-analysis rust-src rustfmt clippy && \
-    cargo install cargo-edit cargo-watch
+    cargo install cargo-edit cargo-watch && \
+    rustup install nightly
